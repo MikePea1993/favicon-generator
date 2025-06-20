@@ -13,19 +13,23 @@ export default function FaviconPreview({ config }: Props) {
   useEffect(() => {
     if (!canvasRef.current) return;
 
-    try {
-      const generatedCanvas = generateFavicon(config, 128);
-      const ctx = canvasRef.current.getContext("2d");
+    const generatePreview = async () => {
+      try {
+        const generatedCanvas = await generateFavicon(config, 128);
+        const ctx = canvasRef.current?.getContext("2d");
 
-      if (ctx) {
-        canvasRef.current.width = 128;
-        canvasRef.current.height = 128;
-        ctx.clearRect(0, 0, 128, 128);
-        ctx.drawImage(generatedCanvas, 0, 0);
+        if (ctx && canvasRef.current) {
+          canvasRef.current.width = 128;
+          canvasRef.current.height = 128;
+          ctx.clearRect(0, 0, 128, 128);
+          ctx.drawImage(generatedCanvas, 0, 0);
+        }
+      } catch (error) {
+        console.error("Error generating preview:", error);
       }
-    } catch (error) {
-      console.error("Error generating preview:", error);
-    }
+    };
+
+    generatePreview();
   }, [config]);
 
   return (

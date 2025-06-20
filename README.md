@@ -1,54 +1,77 @@
-# React + TypeScript + Vite
+# 🎨 Favicon Generator Pro
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> A modern, professional favicon generator with advanced customization options and 20,000+ icons
 
-Currently, two official plugins are available:
+![Project Status](https://img.shields.io/badge/Status-Complete-green)
+![React](https://img.shields.io/badge/React-18.x-blue)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+### 🎯 Core Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Live Preview** - Real-time favicon preview as you design
+- **Multiple Input Types** - Text, images, icons (20,000+), and templates
+- **Complete Size Generation** - All required sizes (16x16 to 512x512)
+- **Professional Templates** - Pre-designed favicon styles for quick starts
+- **Brand Color Extraction** - Auto-extract colors from uploaded logos
+- **Export Package** - ZIP download with all files + HTML code
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### 🔥 Advanced Features
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- **20,000+ Icon Library** - Icons from Font Awesome, Material Design, Heroicons, and more
+- **Smart Font System** - Professional fonts with instant loading
+- **Gradient Builder** - Create stunning gradient backgrounds
+- **Background Removal** - Remove backgrounds from uploaded images
+- **Shape Customization** - Square, rounded, and circular options
+- **Browser Preview** - See how favicon looks in different browsers
+- **Mobile Preview** - Preview as mobile app icons
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### 💎 Technical Features
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+- **Modern React 18** - Built with latest React features
+- **TypeScript** - Fully typed for better development experience
+- **Tailwind CSS** - Beautiful, responsive design
+- **Vite** - Fast build tool and development server
+
+## 🛠️ Tech Stack
+
+- **Frontend**: React 18, TypeScript, Vite
+- **Styling**: Tailwind CSS with custom animations
+- **Icons**: Lucide React, React Icons (20,000+ icons)
+- **Fonts**: @fontsource packages for instant loading
+- **Image Processing**: Canvas API, JSZip for exports
+
+## 🎨 Usage
+
+1. **Choose Input Type**: Select from templates, text, icons, or upload an image
+2. **Customize**: Adjust colors, fonts, shapes, and scaling
+3. **Preview**: See real-time previews across all sizes and contexts
+4. **Export**: Download complete favicon package with all sizes and HTML code
+
+## 🔧 Key Components
+
+### Core Components
+
+- **FaviconGenerator** - Main application component
+- **TemplatesPanel** - Professional template gallery
+- **IconSelectorModal** - 20,000+ icon browser
+- **ImageUploader** - Upload with color extraction and background removal
+- **SettingsPanel** - Advanced customization options
+- **BrowserPreview** - Real browser and mobile previews
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+**Michael Peacock**
+
+- 🌐 Portfolio: [mpdevelopment.netlify.app](https://mpdevelopment.netlify.app)
+- 📧 Email: michaelpeacock1993@gmail.com
+- 💼 LinkedIn: [linkedin.com/in/mikepea1993](https://linkedin.com/in/mikepea1993)
+- 🐙 GitHub: [@MikePea1993](https://github.com/MikePea1993)
+
+---
+
+⭐ **Star this repository if you find it helpful!**
