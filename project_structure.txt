@@ -1,0 +1,74 @@
+# DevFlow Project Structure Map
+Generated on: Fri, May 30, 2025  8:09:44 PM
+Max depth: 5
+Excluded patterns: node_modules|\.git|dist|build|\.cache|coverage|\.next|\.nuxt|\.vscode|\.idea|\.DS_Store|\.env|vendor|bower_components|logs|tmp|temp|__pycache__|\.pytest_cache|\.eslintcache|\.sass-cache|npm-debug\.log|yarn-debug\.log|yarn-error\.log|package-lock\.json|yarn\.lock
+
+## favicon-generator-pro
+- 📂 docs/
+- 📂 public/
+  - 📂 examples/
+    🖼️ vite.png (546B)
+- 📂 src/
+  - 📂 components/
+    - 📂 common/
+        📜 Button.tsx (3KB)
+        📜 index.ts (307B)
+        📜 Input.tsx (3KB)
+        📜 Modal.tsx (5KB)
+        📜 Toast.tsx (6KB)
+      📜 FaviconGenerator.tsx (43KB)
+      📜 FaviconPreview.tsx (2KB)
+      📜 LandingPage.tsx (13KB)
+  - 📂 hooks/
+      📜 useFavicon.ts (504B)
+  - 📂 styles/
+  - 📂 types/
+      📜 favicon.ts (357B)
+  - 📂 utils/
+      📜 faviconGenerator.ts (4KB)
+    📜 App.tsx (2KB)
+    🎨 index.css (10KB)
+    📜 main.tsx (264B)
+- 📂 tests/
+  📄 cleanup.sh (1KB)
+  📜 eslint.config.js (734B)
+  🌐 index.html (366B)
+  📋 package.json (1KB)
+  📜 postcss.config.js (81B)
+  📃 project_structure.txt (1KB)
+  📄 project-visualize.sh (4KB)
+  📝 README.md (1KB)
+  📜 tailwind.config.js (583B)
+  📋 tsconfig.app.json (702B)
+  📋 tsconfig.json (737B)
+  📋 tsconfig.node.json (630B)
+  📜 vite.config.ts (350B)
+
+## File Type Statistics
+Total Files: 28
+
+
+| .css        |     1 |       3.6% |
+| .html       |     1 |       3.6% |
+| .js         |     3 |      10.7% |
+| .json       |     4 |      14.3% |
+| .md         |     1 |       3.6% |
+| .png        |     1 |       3.6% |
+| .sh         |     2 |       7.1% |
+| .ts         |     5 |      17.9% |
+| .tsx        |     9 |      32.1% |
+| .txt        |     1 |       3.6% |
+| Extension | Count | Percentage |
+|-----------|-------|------------|
+Breakdown by type:
+
+## Directory Statistics
+Total Directories: 12
+
+Breakdown by depth:
+
+| Depth | Count |
+|-------|-------|
+|     1 |     4 |
+|     2 |     6 |
+|     3 |     1 |
